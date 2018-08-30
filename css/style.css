@@ -33,12 +33,24 @@ img.social-icon {
     height: 50px;
     border-radius: 50%;
     border: 0.5px solid grey;
+    margin-top: 0;
     
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.fab:hover {
     box-shadow: 0 2px 10px -1px black;
 }
+
+.fab {
+    background-color: black;
+    font-size: 1.9em;
+    padding: 10px 20px;
+    margin: 5px 20px;
+    border-radius: 50%;
+    
+}
+
 
 .btn-outline-primary {
     color: #037bbf;
