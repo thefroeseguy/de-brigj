@@ -13,7 +13,7 @@ body {
 .main-content {
     width: 80%;
 	max-width: 1150px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 }
 
 /*************************************
@@ -127,6 +127,7 @@ ul a {
     border-bottom: solid black 5px;
 }
 
+/*
 .listen-live {
     position: fixed;
     top: 25%;
@@ -141,6 +142,36 @@ ul a {
     background-color: rgba(3,123,191, 0.6);
     margin: auto;
     border-radius: 10% 0 0 10%;
+}
+*/
+
+li.list-group-item {
+    color: black;
+}
+
+li.list-group-item:hover {
+    background-color: lightgrey;
+}
+
+a:hover {
+    text-decoration: none;
+/*    background-color: lightcyan;*/
+}
+
+li.list-group-item:active {
+    text-decoration: none;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.section:last-child {
+    margin-bottom: 80px;
+}
+
+a.info {
+    display: block;
 }
 
 /*************************************

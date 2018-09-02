@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- /Bootstrap -->
+    <!-- MediaElement.js -->
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css">
+    <!-- /MediaElement.js -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- /Font Awesom -->
@@ -116,11 +120,11 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-md-6 order-md-2">
+                <div class="col-lg-6 order-lg-2 section">
                     <h1 class="welcome-title">Welcome!</h1>
                     <p class="welcome-paragraph">De Brigj informs, entertains, and ministers to the Low German community of Aylmer and surrounding areas through its programming. Listeners can stay current on news from Mennonite communities locally and abroad, traffic, weather, community events, and public service announcements. Listeners are also offered entertainment and companionship through music, humour, and ministry segments. De Brigj strives to uphold its mandate of integration and inclusion through information and education.</p>
                 </div>
-                <div class="col-md-3 order-md-1">
+                <div class="col-lg-3 order-lg-1 section">
                     <h1 class="welcome-title">Upcoming Events</h1>
                     <ul class="list-group">
                       <a data-toggle="collapse" href="#event1" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -129,16 +133,16 @@
                           East Elgin Community Complex</li></a>
                         <div class="collapse" id="event1">
                           <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            In early November, David Toews together with a large band will return to Aylmer. The concert will begin at 7pm and will take place at the East Elgin Community Complex and tickets are free! (There will be a free will offering to help cover expenses). Come one, come all for a wonderful night of great music!
                           </div>
                         </div>
                       <a data-toggle="collapse" href="#event2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <li class="list-group-item"><strong>Some Event</strong><br>
-                        Some Date<br>
-                        Some Place</li></a>
+                      <li class="list-group-item"><strong>MCS Auction &amp; Food Fest</strong><br>
+                        June 22nd, 2018<br>
+                        Old Aylmer Curling Club</li></a>
                         <div class="collapse" id="event2">
                           <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            <p>Join us for our 19th annual MCS Auction &amp; Food Fest which raises fund for MCS as well as MCC. Come for breakfast, view and bid on the auction, and stay for lunch! Click <a href="http://www.mcson.org/mcs-charity-auction/" target="_blank">here</a> for more information.</p>
                           </div>
                         </div>
                       <a data-toggle="collapse" href="#event3" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -152,9 +156,13 @@
                         </div>
                     </ul>
                 </div>
-                <div class="col-md-3 order-md-3">
+                <div class="col-lg-3 order-lg-3 section">
                     <h1 class="welcome-title">Latest Podcasts</h1>
-                    <p class="welcome-paragraph">De Brigj informs, entertains, and ministers to the Low German community of Aylmer and surrounding areas through its programming. Listeners can stay current on news from Mennonite communities locally and abroad, traffic, weather, community events, and public service announcements. Listeners are also offered entertainment and companionship through music, humour, and ministry segments. De Brigj strives to uphold its mandate of integration and inclusion through information and education.</p>
+                    <div class="audioWrapper">
+                        <audio class="ditdaut">
+                            <source type="audio/mpeg" src="http://www.mcson.org/podcast-player/4615/18-08-27-dit-daut.mp3?_=1">
+                        </audio>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,5 +218,13 @@
             <p>&copy; 2018</p>
         </div>
     </footer>
+    <script>
+        $('audio').mediaelementplayer({
+            features: ['playpause', 'volume', 'progress'],
+            startLanguage: 'en'
+            
+        });
+
+    </script>
 </body>
 </html>
