@@ -178,53 +178,44 @@
     
     
     <footer>
-        <div class="main-footer">
-            <a href="https://mcson.org" target="_blank"><img id="mcs-logo" src="img/MCS_logo.jpg"></a>
-            <div class="google-map">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAq_wEoMFH9vl9_Wbnwzy3Ax0GIjnJ-Yvc'></script>
-                <div style='overflow:hidden;height:400px;width:520px;' class="img-fluid">
-                    <div id='gmap_canvas' style='height:400px;width:520px;'></div>
-                    <style>
-                        #gmap_canvas img {
-                            max-width: none !important;
-                            background: none !important
-                        }
-                    </style>
-                </div> <a href='https://add-map.com/'>add a google map to your website</a>
-                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=b370a9486ca74a0c23c0dfff2c3a61df82d60402'></script>
-                <script type='text/javascript'>
-                    function init_map() {
-                        var myOptions = {
-                            zoom: 16,
-                            center: new google.maps.LatLng(42.7728997, -80.98254980000002),
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                        marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(42.7728997, -80.98254980000002)
-                        });
-                        infowindow = new google.maps.InfoWindow({
-                            content: '<strong>Radio CHPD</strong><br>16 Talbot Street East<br>Aylmer, ON N5H 1H4<br>'
-                        });
-                        google.maps.event.addListener(marker, 'click', function() {
-                            infowindow.open(map, marker);
-                        });
-                        infowindow.open(map, marker);
-                    }
-                    google.maps.event.addDomListener(window, 'load', init_map);
-                </script>
+        <div class="main-footer container">
+            <div class="row">
+                <div class="m-auto">
+                    <a href="https://mcson.org" target="_blank"><img class="my-auto social-icon" src="img/MCS_logo.jpg" alt="MCS logo"></a>
+                    <a target="_blank" href="https://www.facebook.com/debrigj/"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="mailto:radio@mcson.org"><i class="far fa-envelope"></i></a>
+                </div>
             </div>
-            <p>&copy; 2018</p>
+            <div class="row">
+                    <ul class="mx-auto footer-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="Program%20Overview%202018.pdf">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="#">Podcasts</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="m-auto">
+                       <p>&copy; 2018 Mennonite Community Services</p>
+                   </div> 
+                </div
+            
+            
         </div>
     </footer>
-    <script>
-        $('audio').mediaelementplayer({
-            features: ['playpause', 'volume', 'progress'],
-            startLanguage: 'en'
-            
-        });
-
-    </script>
 </body>
 </html>
