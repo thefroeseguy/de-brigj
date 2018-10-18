@@ -80,15 +80,7 @@ li.nav-item:last-child {
 }
 
 
-.slogan {
-    color: #037bbf;
-    padding: 5px 0;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    border-top: solid black 5px;
-    border-bottom: solid black 5px;
-}
+
 
 
 
@@ -120,6 +112,42 @@ li.list-group-item:active {
 a.info {
     display: block;
 }
+
+/*************************************
+        Homepage Main-Content
+*************************************/
+
+.slogan {
+    color: #037bbf;
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
+}
+
+.welcome-title {
+    font-size: 3em;
+}
+
+.welcome-paragraph {
+    font-size: 1.5em;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 25px;
+    opacity: 0.50;
+    transition: all 0.2s ease;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+    box-shadow: 0 0 15px -1px black;
+}
+
+
 
 /*************************************
             Footer
