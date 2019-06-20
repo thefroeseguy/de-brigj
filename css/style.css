@@ -205,6 +205,25 @@ figcaption {
 }
 
 /*************************************
+            About Page
+*************************************/
+
+.contact-info {
+    width: 50%;
+    color: black;
+    border-right: 1px black solid;
+    
+}
+
+.contact-info a{
+    color: black;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+/*************************************
             Footer
 *************************************/
 
